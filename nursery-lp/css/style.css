@@ -1,0 +1,474 @@
+/* ============================================
+   CSS Variables & Reset
+   ============================================ */
+:root {
+  /* Colors */
+  --color-bg-cream: #F5F0E8;
+  --color-bg-hero: #EDE8DE;
+  --color-bg-message: #EDE8DE;
+  --color-green-shape: #8DAEAD;
+  --color-green-dot: #7AAF6A;
+  --color-circle-yellow: #D4C47A;
+  --color-text-dark: #3D3530;
+  --color-text-body: #4A4542;
+  --color-text-nav: #5A4F49;
+  --color-label-en: #7DAAB0;
+  --color-btn-entry: #C4726A;
+  --color-btn-entry-text: #fff;
+  --color-logo-divider: #B8AFA8;
+  --color-badge-title: #C4726A;
+  --color-badge-bg: rgba(255, 255, 255, 0.85);
+
+  /* Typography */
+  --font-heading: 'Zen Maru Gothic', sans-serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+  --font-label: 'Montserrat', sans-serif;
+
+  /* Layout */
+  --container-max: 1120px;
+  --header-height: 70px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================
+   Common Container
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* ============================================
+   Common Button: Entry
+   ============================================ */
+.btn-entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-btn-entry);
+  color: var(--color-btn-entry-text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.875rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-entry:hover {
+  opacity: 0.85;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-bg-cream);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__inner {
+  width: 100%;
+  max-width: var(--container-max);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.header__logo svg {
+  flex-shrink: 0;
+}
+
+.header__logo-name {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  letter-spacing: 0.05em;
+}
+
+.header__logo-divider {
+  color: var(--color-logo-divider);
+  font-size: 0.875rem;
+}
+
+.header__logo-sub {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-nav);
+  letter-spacing: 0.02em;
+}
+
+/* Nav */
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__nav-link {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--color-text-nav);
+  letter-spacing: 0.03em;
+  transition: color 0.2s ease;
+}
+
+.header__nav-link:hover {
+  color: var(--color-btn-entry);
+}
+
+/* Header Entry Button */
+.btn-entry--header {
+  padding: 10px 22px;
+  font-size: 0.8125rem;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  width: 100%;
+  background-color: var(--color-bg-hero);
+  overflow: hidden;
+  padding: 60px 0 70px;
+}
+
+.hero__inner {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero__visual {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Green blob background shape */
+.bg-shape-green {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 480px;
+  height: 460px;
+  background-color: var(--color-green-shape);
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+/* Dot decoration */
+.hero__dots {
+  position: absolute;
+  left: 68px;
+  top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 10px);
+  grid-template-rows: repeat(3, 10px);
+  gap: 8px;
+  z-index: 1;
+}
+
+.hero__dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-green-dot);
+}
+
+/* Main photo */
+.photo-main {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 560px;
+  height: 500px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.photo-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 48% 48% 48% 48% / 42% 42% 52% 52%;
+}
+
+/* Catchcopy */
+.hero__catchcopy {
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  z-index: 3;
+}
+
+.hero__catchcopy-label {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 16px;
+}
+
+.hero__catchcopy-heading {
+  display: flex;
+  flex-direction: row-reverse; /* 右から：先生にも → 子どもにも → 優しい保育 */
+  gap: 0.5em;
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+.hero__catchcopy-heading span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+
+/* Small nursery badge */
+.badge-small-nursery {
+  position: absolute;
+  top: 32px;
+  right: 60px;
+  z-index: 5;
+  background-color: var(--color-badge-bg);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.badge-small-nursery__title {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-badge-title);
+  letter-spacing: 0.05em;
+}
+
+.badge-small-nursery__desc {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  color: var(--color-text-body);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+/* Hero Entry Button */
+.btn-entry--hero {
+  position: absolute;
+  bottom: 32px;
+  right: 60px;
+  z-index: 5;
+  padding: 14px 32px;
+  font-size: 0.875rem;
+}
+
+/* ============================================
+   MESSAGE
+   ============================================ */
+.message {
+  width: 100%;
+  min-height: 720px;
+  background-color: var(--color-bg-message);
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.message__inner {
+  width: 100%;
+  max-width: var(--container-max);
+  height: 520px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+
+/* ---- Message Visual (left) ---- */
+.message__visual {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  flex-shrink: 0;
+}
+
+/* Yellow circle background */
+.bg-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-circle-yellow);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -40%);
+  z-index: 0;
+  opacity: 0.7;
+}
+
+/* Photo Top */
+.photo-top {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 220px;
+  height: 220px;
+  z-index: 2;
+}
+
+.photo-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Photo Left */
+.photo-left {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 210px;
+  height: 210px;
+  z-index: 2;
+}
+
+.photo-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Photo Bottom */
+.photo-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+  width: 190px;
+  height: 190px;
+  z-index: 2;
+}
+
+.photo-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ---- Message Text (right) ---- */
+.message__text {
+  width: 440px;
+  flex-shrink: 0;
+}
+
+.message__heading-block {
+  margin-bottom: 32px;
+}
+
+/* EN Label */
+.label-en {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  color: var(--color-label-en);
+  margin-bottom: 16px;
+}
+
+/* Message Heading */
+.message__heading {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  line-height: 1.8;
+  letter-spacing: 0.15em;
+}
+
+/* Message Body */
+.message__body {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-text-body);
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
