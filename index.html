@@ -3,124 +3,297 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>陽だまりの森保育園 | 採用サイト</title>
+  <title>陽だまりの森保育園｜採用サイト</title>
+  <meta name="description" content="陽だまりの森保育園の採用サイト。先生にも子どもにもやさしい保育を大切にする小規模保育園です。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@600&family=Noto+Sans+JP:wght@400&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260608-19">
 </head>
 <body>
-
-  <!-- ========== HEADER ========== -->
-  <header class="header">
-    <div class="header__inner">
-      <div class="header__logo">
-        <!-- SVG tree logo inline -->
-        <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <ellipse cx="18" cy="10" rx="10" ry="10" fill="#7BAF8A"/>
-          <ellipse cx="11" cy="16" rx="8" ry="8" fill="#9DC4A0"/>
-          <ellipse cx="25" cy="16" rx="8" ry="8" fill="#6B9E7A"/>
-          <rect x="15" y="26" width="6" height="12" rx="2" fill="#C4956A"/>
-        </svg>
-        <span class="header__logo-name">陽だまりの森保育園</span>
-        <span class="header__logo-divider">｜</span>
-        <span class="header__logo-sub">採用サイト</span>
-      </div>
-
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li><a href="#" class="header__nav-link">私たちの保育</a></li>
-          <li><a href="#" class="header__nav-link">働く魅力</a></li>
-          <li><a href="#" class="header__nav-link">1日の流れ</a></li>
-          <li><a href="#" class="header__nav-link">先輩の声</a></li>
-          <li><a href="#" class="header__nav-link">募集要項</a></li>
-          <li><a href="#" class="header__nav-link">よくある質問</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="陽だまりの森保育園 採用サイト">
+        <img src="images/logo.svg" alt="陽だまりの森保育園">
+        <span>採用サイト</span>
+      </a>
+      <nav class="nav" aria-label="グローバルナビゲーション">
+        <a href="#message">私たちの保育</a>
+        <a href="#feature">働く魅力</a>
+        <a href="#schedule">1日の流れ</a>
+        <a href="#staff">先輩の声</a>
+        <a href="#requirements">募集要項</a>
+        <a href="#faq">よくある質問</a>
       </nav>
-
-      <a href="#" class="btn-entry btn-entry--header">園見学を申し込む</a>
+      <a class="btn btn-small" href="#contact"><span></span>園見学を申し込む</a>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero">
-    <div class="hero__inner">
-      <div class="hero__visual">
+  <main id="top">
+    <section class="hero" aria-label="メインビジュアル">
+      <img src="images/hero-main-pc.jpg" alt="先生にも子どもにも優しい保育" class="hero-img">
+    </section>
 
-        <!-- 背景の緑のblobシェイプ -->
-        <div class="bg-shape-green" aria-hidden="true"></div>
+    <section class="message section-beige section-curve" id="message">
+      <div class="inner message-inner">
+        <div class="message-photos">
+          <div class="garden-wrap">
+            <img class="message-lines" src="images/deco-message-lines-beige.png" alt="">
+            <img class="message-garden" src="images/message-garden.jpg" alt="園庭のある保育園の外観">
+            <img class="message-dots" src="images/deco-message-dots-pink.png" alt="">
+          </div>
+          <img class="message-room" src="images/message-room.jpg" alt="明るい保育室">
+          <img class="message-drawing" src="images/message-drawing.jpg" alt="子どもの制作活動">
+        </div>
+        <div class="section-title message-title">
+          <p class="label">MESSAGE</p>
+          <h2>陽だまり森の<br>保育スタイル</h2>
+          <p class="lead">土・水・草花・虫・季節の変化にふれながら、子どもたちの「やってみたい！」を大切にする保育。</p>
+          <p>少人数だからこそ、一人ひとりのペースで丁寧に向き合えます。保育士も無理なく、自分らしく働ける環境を整えています。</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- 緑のドット装飾 -->
-        <div class="hero__dots" aria-hidden="true">
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
+    <section class="feature section-light" id="feature">
+      <div class="inner narrow">
+        <div class="section-title center">
+          <p class="label">FEATURE</p>
+          <h2>陽だまり森の良いところ</h2>
         </div>
 
-        <!-- メイン写真 -->
-        <div class="photo-main">
-          <img src="assets/images/hero-main.jpg" alt="先生と子どもが積み木で遊んでいる様子">
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-badge badge-blue"><img src="images/feature-badge-blue.png" alt=""><span>01</span></div>
+            <div class="feature-photo-wrap feature-card__image-wrap">
+              <img class="feature-photo feature-card__image" src="images/feature-01.jpg" alt="子どもたちが並んで歩く様子">
+              <img class="photo-bg photo-bg-yellow feature-card__deco" src="images/feature-bg-yellow.png" alt="">
+            </div>
+            <h3>子どもの主体性を大切に</h3>
+            <p>子ども自身が「やりたい」と思う気持ちを尊重。自分で考え、試し、学ぶ力を育みます。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-badge badge-green"><img src="images/feature-badge-green.png" alt=""><span>02</span></div>
+            <div class="feature-photo-wrap feature-card__image-wrap">
+              <img class="feature-photo feature-card__image" src="images/feature-02.jpg" alt="制作をする手元">
+              <img class="photo-bg photo-bg-green feature-card__deco" src="images/feature-bg-green.png" alt="">
+            </div>
+            <h3>無理なく続けられる働き方</h3>
+            <p>残業は月平均3時間程度。持ち帰りもほとんどなく、勤務後は自分や家族のための時間も大切にできます。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-badge badge-blue"><img src="images/feature-badge-blue.png" alt=""><span>03</span></div>
+            <div class="feature-photo-wrap feature-card__image-wrap">
+              <img class="feature-photo feature-card__image" src="images/feature-03.jpg" alt="先生と子どもが遊ぶ様子">
+              <img class="photo-bg photo-bg-yellow feature-card__deco" src="images/feature-bg-yellow.png" alt="">
+            </div>
+            <h3>支え合えるチームで安心</h3>
+            <p>少人数のスタッフだから距離が近く、困ったことはすぐ相談できる環境です。ブランク明けの方も、ペースに合わせて無理なく慣れていけます。</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-badge badge-green"><img src="images/feature-badge-green.png" alt=""><span>04</span></div>
+            <div class="feature-photo-wrap feature-card__image-wrap">
+              <img class="feature-photo feature-card__image" src="images/feature-04.jpg" alt="子どもが学ぶ様子">
+              <img class="photo-bg photo-bg-green feature-card__deco" src="images/feature-bg-green.png" alt="">
+            </div>
+            <h3>子育て中でも働きやすい</h3>
+            <p>急な体調不良にもみんなでカバー。有給取得率90％・産育休復帰率100％で、見学や相談から気軽にスタートできます。</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <!-- キャッチコピー -->
-        <div class="hero__catchcopy">
-          <p class="hero__catchcopy-label">NURSERY SCHOOL RECRUITMENT</p>
-          <h1 class="hero__catchcopy-heading">
-            <span>先生にも</span>
-            <span>子どもにも</span>
-            <span>優しい保育</span>
-          </h1>
+    <section class="schedule section-beige section-curve" id="schedule">
+      <div class="inner">
+        <div class="section-title center">
+          <p class="label">DAILY SCHEDULE</p>
+          <h2>ある1日の流れ（例）</h2>
         </div>
-
-        <!-- 小規模バッジ -->
-        <div class="badge-small-nursery">
-          <p class="badge-small-nursery__title">小規模</p>
-          <p class="badge-small-nursery__desc">定員40名の<br>小規模保育</p>
+        <div class="schedule-list">
+          <article class="schedule-item">
+            <img src="images/schedule-01.png" alt="登園・受け入れ">
+            <time>7:30</time>
+            <div><h3>登園・受け入れ</h3><p>子どもたちを笑顔でお迎え。保護者と一言コミュニケーション</p></div>
+          </article>
+          <article class="schedule-item">
+            <img src="images/schedule-02.png" alt="朝のあそび・お集まり">
+            <time>9:00</time>
+            <div><h3>朝のあそび・お集まり</h3><p>歌や絵本、自由遊び。子どもの「やりたい！」を引き出す時間</p></div>
+          </article>
+          <article class="schedule-item">
+            <img src="images/schedule-03.png" alt="給食">
+            <time>11:30</time>
+            <div><h3>給食</h3><p>手作り給食でほっとひと息。子どもたちと一緒に「おいしい！」</p></div>
+          </article>
+          <article class="schedule-item">
+            <img src="images/schedule-04.png" alt="午睡・休憩">
+            <time>13:00</time>
+            <div><h3>午睡・休憩</h3><p>子どもがお昼寝の間に書類作成や休憩。メリハリのある仕事</p></div>
+          </article>
+          <article class="schedule-item">
+            <img src="images/schedule-05.png" alt="おやつ・室内あそび">
+            <time>15:00</time>
+            <div><h3>おやつ・室内あそび</h3><p>おやつの後は好きな遊びを楽しむ。じっくり向き合える時間</p></div>
+          </article>
+          <article class="schedule-item">
+            <img src="images/schedule-06.png" alt="降園">
+            <time>18:30</time>
+            <div><h3>降園</h3><p>今日の出来事を保護者にお伝え。お迎えを一緒に喜び合う</p></div>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <!-- エントリーボタン -->
-        <a href="#" class="btn-entry btn-entry--hero">園見学を申し込む</a>
+    <section class="staff section-light" id="staff">
+      <div class="inner narrow">
+        <div class="section-title center staff-heading">
+          <img class="garland garland-left" src="images/staff-garland.png" alt="">
+          <div>
+            <p class="label">STAFF VOICE</p>
+            <h2>先輩の声</h2>
+          </div>
+          <img class="garland garland-right" src="images/staff-garland.png" alt="">
+        </div>
+        <div class="staff-grid">
+          <article class="staff-card">
+            <img src="images/staff-01.jpg" alt="Aさん（保育士）">
+            <div class="staff-body">
+              <p class="tag">新卒入職 3年目</p>
+              <h3>Aさん（保育士）</h3>
+              <p>子どもたちの「できた！」を毎日感じられる仕事です。小人数だから、一人ひとりの成長をていねいに見守れます。</p>
+            </div>
+          </article>
+          <article class="staff-card staff-card-middle">
+            <img src="images/staff-02.jpg" alt="Bさん（保育士）">
+            <div class="staff-body">
+              <p class="tag">中途入職 5年目</p>
+              <h3>Bさん（保育士）</h3>
+              <p>前職よりも残業が少なく、家庭との両立がしやすくなりました。困った時に相談しやすい雰囲気も安心です。</p>
+            </div>
+          </article>
+          <article class="staff-card">
+            <img src="images/staff-03.jpg" alt="Cさん（保育士）">
+            <div class="staff-body">
+              <p class="tag">ブランク復帰 1年目</p>
+              <h3>Cさん（保育士）</h3>
+              <p>ブランクがあって不安でしたが、ゆっくり慣れていけるよう配慮してもらえました。子どもと丁寧に向き合えます。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="requirements section-beige section-curve" id="requirements">
+      <div class="inner narrow">
+        <div class="section-title center">
+          <p class="label">RECRUITMENT</p>
+          <h2>募集要項</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><th>募集職種</th><td>保育士</td></tr>
+              <tr><th>雇用形態</th><td>正社員・パート</td></tr>
+              <tr><th>勤務時間</th><td>7:30〜18:30の間でシフト制</td></tr>
+              <tr><th>勤務場所</th><td>陽だまりの森保育園</td></tr>
+              <tr><th>給与</th><td>経験・スキルに応じて決定</td></tr>
+              <tr><th>福利厚生</th><td>社会保険完備、交通費支給、産休・育休制度</td></tr>
+              <tr><th>その他</th><td>見学のみ、カジュアル面談からのご相談も歓迎します。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="requirements-buttons">
+          <a class="btn btn-outline" href="#contact">詳しい募集内容を見る</a>
+          <a class="btn" href="#contact"><span></span>応募を相談してみる</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-light" id="faq">
+      <div class="inner narrow faq-inner">
+        <div class="section-title center">
+          <p class="label">FAQ</p>
+          <h2>よくある質問</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary><span>Q</span>未経験でも応募できますか？</summary>
+            <p><span>A</span>はい。先輩が業務の流れを丁寧にサポートします。見学や相談からでも歓迎です。</p>
+          </details>
+          <details>
+            <summary><span>Q</span>見学だけでも可能ですか？</summary>
+            <p><span>A</span>可能です。園の雰囲気や働き方を知ってから検討いただけます。</p>
+          </details>
+          <details>
+            <summary><span>Q</span>残業や持ち帰りはありますか？</summary>
+            <p><span>A</span>残業は少なめで、持ち帰りが発生しにくい体制づくりを大切にしています。</p>
+          </details>
+          <details>
+            <summary><span>Q</span>ブランクがあっても大丈夫ですか？</summary>
+            <p><span>A</span>大丈夫です。復帰後のペースに合わせて少しずつ慣れていけます。</p>
+          </details>
+          <details>
+            <summary><span>Q</span>ピアノが苦手でも応募できますか？</summary>
+            <p><span>A</span>得意なことを活かしながらチームで保育を進めるため、ピアノが苦手でも問題ありません。</p>
+          </details>
+          <details>
+            <summary><span>Q</span>パート勤務から正社員は目指せますか？</summary>
+            <p><span>A</span>希望や状況に応じて相談できます。まずは働き方の希望を聞かせてください。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-beige" id="contact">
+      <div class="inner contact-inner">
+        <div class="section-title center">
+          <p class="label">VISIT US</p>
+          <h2>まずは園の雰囲気を見に来ませんか？</h2>
+          <p>見学のみ、カジュアル面談のみでも大丈夫です。<br>あなたらしく働ける場所か、ぜひ一度たしかめてください。</p>
+        </div>
+        <div class="contact-box">
+          <div class="tel">
+            <small>お電話でのお問い合わせ</small>
+            <a href="tel:03XXXXXXXX">03-XXXX-XXXX</a>
+            <span>受付時間：平日9:00〜17:00</span>
+          </div>
+          <div class="mail">
+            <small>メールでのお問い合わせ</small>
+            <a class="btn" href="mailto:sample@example.com"><span></span>園見学を申し込む</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="inner footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="陽だまりの森保育園">
+        <p>一人ひとりに寄り添う、あたたかな小規模保育。</p>
+      </div>
+      <div class="footer-links">
+        <div><h3>INFORMATION</h3><a href="#message">私たちの保育</a><a href="#feature">働く魅力</a><a href="#schedule">1日の流れ</a></div>
+        <div><h3>RECRUIT</h3><a href="#staff">先輩の声</a><a href="#requirements">募集要項</a><a href="#faq">よくある質問</a></div>
+        <div><h3>CONTACT</h3><p>〒000-0000<br>東京都〇〇区〇〇</p><p>TEL：03-XXXX-XXXX</p></div>
       </div>
     </div>
-  </section>
+    <p class="notice">※本サイトはポートフォリオ掲載用の架空制作です。写真素材はUnsplash等のフリー素材を使用しています。</p>
+    <p class="copyright">© 2026 Hidamari Mori Nursery School. Portfolio demo site.</p>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const target = document.querySelector(link.getAttribute("href"));
+        if (!target) return;
 
-  <!-- ========== MESSAGE ========== -->
-  <section class="message">
-    <div class="message__inner">
-
-      <!-- ビジュアル（左） -->
-      <div class="message__visual">
-        <div class="bg-circle" aria-hidden="true"></div>
-        <div class="photo-top">
-          <img src="assets/images/message-photo-top.png" alt="先生と子どもが遊んでいる様子">
-        </div>
-        <div class="photo-left">
-          <img src="assets/images/message-photo-left.png" alt="先生と子どもが工作している様子">
-        </div>
-        <div class="photo-bottom">
-          <img src="assets/images/message-photo-bottom.png" alt="先生が赤ちゃんを抱っこしている様子">
-        </div>
-      </div>
-
-      <!-- テキスト（右） -->
-      <div class="message__text">
-        <div class="message__heading-block">
-          <p class="label-en">MESSAGE</p>
-          <h2 class="message__heading">
-            陽だまり森の<br>保育スタイル
-          </h2>
-        </div>
-        <p class="message__body">
-          土・水・草花・虫・季節の変化にふれながら、子どもたちの「やってみたい！」を大切にする保育。<br>
-          少人数だからこそ、一人ひとりのペースで丁寧に向き合えます。保育士も無理なく、自分らしく働ける環境を整えています。
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <script src="js/main.js"></script>
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.pushState(null, "", link.getAttribute("href"));
+      });
+    });
+  </script>
 </body>
 </html>
