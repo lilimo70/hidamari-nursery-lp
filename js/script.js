@@ -33,7 +33,7 @@ if (menuButton && mobileMenu) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 760) closeMobileMenu();
+    if (window.innerWidth >= 1200) closeMobileMenu();
   });
 }
 
