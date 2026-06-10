@@ -1,3 +1,7 @@
+/* =========================
+  Base / 共通設定
+========================= */
+/* サイト全体で使う色・角丸・影を変数として管理 */
 :root {
   --bg: #fffaf2;
   --beige: #eee6d8;
@@ -27,6 +31,9 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 .inner { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
 .narrow { width: min(920px, calc(100% - 48px)); }
+/* =========================
+  Header / ヘッダー
+========================= */
 .site-header {
   position: sticky;
   top: 0;
@@ -44,6 +51,9 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 18px;
 }
+/* =========================
+  Component / 共通パーツ
+========================= */
 .logo { display: flex; align-items: center; gap: 9px; font-weight: 700; font-size: 12px; white-space: nowrap; }
 .logo img { width: 145px; height: auto; }
 .logo span { padding-left: 10px; border-left: 1px solid var(--line); }
@@ -91,7 +101,9 @@ img { max-width: 100%; display: block; }
 .btn-outline { background: var(--white); color: var(--text); border: 1px solid var(--line); box-shadow: none; }
 .mobile-cta { display: none; }
 
-/* Page Top */
+/* =========================
+  Fixed Buttons / スマホ固定CTA・ページトップボタン
+========================= */
 .page-top {
   position: fixed;
   right: 28px;
@@ -123,11 +135,18 @@ img { max-width: 100%; display: block; }
   opacity: .86;
   transform: translateY(-3px);
 }
+/* =========================
+  Hero / ファーストビュー
+========================= */
 .hero { padding: 0; background: var(--bg); }
 .hero-img { width: 100%; height: auto; }
+/* =========================
+  Layout / 共通レイアウト
+========================= */
 .section-light { background: var(--bg); }
 .section-beige { background: var(--beige); }
 section { padding: 96px 0; position: relative; overflow: hidden; }
+/* セクション下部にカーブ装飾を作るための共通設定 */
 .section-curve {
   position: relative;
   overflow: visible;
@@ -170,6 +189,9 @@ section { padding: 96px 0; position: relative; overflow: hidden; }
 }
 .section-title p:not(.label) { color: var(--muted); }
 .center { text-align: center; }
+/* =========================
+  Message / 保育スタイル・メインメッセージ
+========================= */
 .message-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 80px; position: relative; z-index: 1; }
 .message-photos { position: relative; min-height: 390px; isolation: isolate; }
 .garden-wrap { position: absolute; left: 0; top: 70px; width: 55%; }
@@ -179,6 +201,9 @@ section { padding: 96px 0; position: relative; overflow: hidden; }
 .message-room { position: absolute; right: 50px; top: 5px; width: 150px; border: 3px solid var(--white); border-radius: 50%; z-index: 1; }
 .message-drawing { position: absolute; right: 50px; top: 190px; width: 150px; border: 3px solid var(--white); border-radius: 50%; z-index: 1; }
 .message-title .lead { margin-top: 34px; }
+/* =========================
+  Features / 園の特徴
+========================= */
 .feature { padding-top: 82px; }
 .feature-grid { margin-top: 54px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px 36px; }
 .feature-card {
@@ -215,6 +240,9 @@ section { padding: 96px 0; position: relative; overflow: hidden; }
 .photo-bg-green { right: 0px; top: 10px; width: 240px; height: 240px ;}
 .feature-card h3 { position: relative; z-index: 3; margin: 0 0 14px; color: var(--green); font-size: 18px; line-height: 1.6; font-weight: 700; }
 .feature-card p { position: relative; z-index: 3; margin: 0; font-size: 13px; color: var(--muted); }
+/* =========================
+  Daily Flow / 1日の流れ
+========================= */
 .schedule-list {
   position: relative;
   z-index: 1;
@@ -250,6 +278,9 @@ section { padding: 96px 0; position: relative; overflow: hidden; }
 .schedule-item div { min-height: 124px; padding: 16px 10px; background: var(--white); border-radius: 8px; box-shadow: none; }
 .schedule-item h3 { margin: 0 0 8px; font-size: 14px; }
 .schedule-item p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+/* =========================
+  Staff Voice / 先輩の声
+========================= */
 .staff-heading { display: flex; align-items: center; justify-content: center; gap: 60px; }
 .garland { width: 210px; }
 .staff-grid { margin-top: 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
@@ -260,12 +291,18 @@ section { padding: 96px 0; position: relative; overflow: hidden; }
 .staff-body .tag { display: inline-block; margin: 0 0 16px; padding: 7px 18px; border-radius: 999px; background: var(--green-light); color: var(--green); font-weight: 700; font-size: 13px; }
 .staff-body h3 { display: inline-block; margin: 0 0 20px 12px; font-size: 19px; }
 .staff-body p:last-child { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+/* =========================
+  Requirements / 募集要項
+========================= */
 .table-wrap { margin-top: 54px; background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
 table { width: 100%; border-collapse: collapse; }
 th, td { padding: 20px 28px; border-bottom: 1px solid var(--line); text-align: left; }
 th { width: 170px; background: rgba(255,250,242,.45); font-weight: 700; }
 tr:last-child th, tr:last-child td { border-bottom: none; }
 .requirements-buttons { margin-top: 34px; display: flex; justify-content: center; gap: 18px; }
+/* =========================
+  FAQ / よくある質問
+========================= */
 .faq { padding-top: 118px; }
 .faq-list { margin-top: 54px; display: grid; gap: 16px; }
 details { background: var(--white); border-radius: 10px; box-shadow: var(--shadow); overflow: hidden; }
@@ -291,6 +328,9 @@ details[open] summary::after { content: "−"; }
 summary span, details p span { color: var(--green); font-family: "Montserrat", sans-serif; font-size: 22px; line-height: 1; font-weight: 700; }
 details p { margin: 0; padding: 0 24px 22px; color: var(--muted); font-size: 14px; display: flex; align-items: flex-start; gap: 14px; }
 details p span { flex: 0 0 auto; color: var(--orange); }
+/* =========================
+  Contact / お問い合わせ
+========================= */
 .contact { padding: 116px 0; }
 .contact-box { margin: 52px auto 0; width: min(760px, 100%); padding: 34px 54px; display: grid; grid-template-columns: 1fr 1fr; gap: 34px; align-items: center; background: var(--white); border-radius: 16px; box-shadow: var(--shadow); }
 .contact-box > div + div { border-left: 1px solid var(--green); padding-left: 42px; }
@@ -299,6 +339,9 @@ details p span { flex: 0 0 auto; color: var(--orange); }
 .tel a { display: block; color: var(--green); font-family: "Montserrat", sans-serif; font-size: 28px; font-weight: 700; letter-spacing: .08em; }
 .tel span { color: var(--muted); font-size: 13px; }
 .mail { display: flex; flex-direction: column; align-items: center; text-align: center; }
+/* =========================
+  Footer / フッター
+========================= */
 .footer { padding: 70px 0 28px; background: var(--white); border-top: 1px solid var(--line); }
 .footer-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 70px; }
 .footer-brand img { width: 180px; margin-bottom: 18px; }
@@ -318,6 +361,9 @@ details p span { flex: 0 0 auto; color: var(--orange); }
   font-size: 11px;
   text-align: center;
 }
+/* =========================
+  Responsive / レスポンシブ調整
+========================= */
 @media (max-width: 1200px) {
   /* Responsive: Message */
   .message-inner {
@@ -365,7 +411,7 @@ details p span { flex: 0 0 auto; color: var(--orange); }
     margin: 0 auto;
   }
 }
-
+/* tablet */
 @media (max-width: 1199px) {
   /* Responsive: Header */
   .header-inner {
@@ -432,7 +478,7 @@ details p span { flex: 0 0 auto; color: var(--orange); }
   .header__menu-button[aria-expanded="true"] span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-
+/* スマホ・タブレット時に表示するハンバーガーメニュー */
   .mobile-menu {
     position: fixed;
     inset: 64px 0 auto;
@@ -560,10 +606,11 @@ details p span { flex: 0 0 auto; color: var(--orange); }
   .staff-heading { gap: 20px; }
   .garland { width: 160px; }
 }
-
+/* mobile */
 @media (max-width: 760px) {
   html { scroll-padding-top: 76px; }
   body { font-size: 14px; padding-bottom: 72px; }
+  /* スマホ画面下部に固定表示する応募CTA */
   .mobile-cta {
     position: fixed;
     left: 16px;
