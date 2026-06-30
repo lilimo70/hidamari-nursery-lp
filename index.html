@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20260609-05">
+  <link rel="stylesheet" href="css/style.css?v=20260629-01">
 </head>
 <body>
   <!-- =========================
@@ -17,8 +17,11 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="logo" href="#top" aria-label="陽だまりの森保育園 採用サイト">
-        <img src="images/logo.svg" alt="陽だまりの森保育園">
-        <span>採用サイト</span>
+        <img class="logo__icon" src="images/hidamari_common_logo-icon.png" alt="">
+        <span class="logo__text">
+          <span class="logo__name">陽だまりの森保育園</span>
+          <span class="logo__site">採用サイト</span>
+        </span>
       </a>
       <nav class="nav" aria-label="グローバルナビゲーション">
         <a href="#message">私たちの保育</a>
@@ -57,25 +60,41 @@
 ========================= -->
   <main id="top">
     <section class="hero" aria-label="メインビジュアル">
-      <img src="images/hero-main-pc.jpg" alt="先生にも子どもにも優しい保育" class="hero-img">
+      <div class="hero__inner">
+        <img class="hero__left-decoration" src="images/hidamari_hero_left-decoration.png" alt="">
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            <span>陽だまりの中で</span>
+            <span>小さな<span class="hero__quote-mark">「</span>できた<span class="hero__quote-mark">」</span>が育つ</span>
+          </h1>
+        </div>
+        <div class="hero__visual">
+          <img class="hero__right-decoration" src="images/hidamari_hero_right-decoration.png" alt="">
+          <img class="hero__photo" src="images/hidamari_hero_main-photo.png" alt="木に登る子どもたち">
+          <p class="hero__badge">
+            <span>定員40名</span>
+            <span>子どもに寄り添う</span>
+            <span>小さな保育園</span>
+          </p>
+        </div>
+      </div>
     </section>
 <!-- =========================
   Message / 保育スタイル・メインメッセージ
 ========================= -->
-    <section class="message section-beige section-curve" id="message">
+    <section class="message section-beige" id="message">
       <div class="inner message-inner">
         <div class="message-photos">
-          <div class="garden-wrap">
-            <img class="message-lines" src="images/deco-message-lines-beige.png" alt="">
-            <img class="message-garden" src="images/message-garden.jpg" alt="園庭のある保育園の外観">
-            <img class="message-dots" src="images/deco-message-dots-pink.png" alt="">
-          </div>
-          <img class="message-room" src="images/message-room.jpg" alt="明るい保育室">
-          <img class="message-drawing" src="images/message-drawing.jpg" alt="子どもの制作活動">
+          <img class="message-main-visual" src="images/message-main-visual.png" alt="園庭のある保育園の外観">
         </div>
         <div class="section-title message-title">
-          <p class="label">MESSAGE</p>
-          <h2>陽だまり森の<br>保育スタイル</h2>
+          <div class="message-title__heading">
+            <div>
+              <p class="label">MESSAGE</p>
+              <h2>陽だまり森の<br>保育スタイル</h2>
+            </div>
+            <img class="message-title__icon" src="images/message-title-icon.png" alt="">
+          </div>
           <p class="lead">土・水・草花・虫・季節の変化にふれながら、子どもたちの「やってみたい！」を大切にする保育。</p>
           <p>少人数だからこそ、一人ひとりのペースで丁寧に向き合えます。保育士も無理なく、自分らしく働ける環境を整えています。</p>
         </div>
@@ -85,10 +104,16 @@
   Features / 園の特徴
 ========================= -->
     <section class="feature section-light" id="feature">
+      <img class="feature__bg-decoration" src="images/hidamari_feature_bg-decoration-pc.png" alt="">
       <div class="inner narrow">
-        <div class="section-title center">
-          <p class="label">FEATURE</p>
-          <h2>陽だまり森の良いところ</h2>
+        <div class="section-title center feature-title">
+          <div class="feature-title__heading">
+            <img class="feature-title__icon" src="images/hidamari_feature_title-icon.png" alt="">
+            <div>
+              <p class="label">FEATURE</p>
+              <h2>陽だまりの良いところ</h2>
+            </div>
+          </div>
         </div>
 
         <div class="feature-grid">
@@ -133,15 +158,21 @@
           </article>
         </div>
       </div>
+      <img class="feature__bottom-decoration" src="images/hidamari_daily_bg-decoration-pc.png" alt="">
     </section>
 <!-- =========================
   Daily Flow / 1日の流れ
 ========================= -->
-    <section class="schedule section-beige section-curve" id="schedule">
+    <section class="schedule section-beige" id="schedule">
       <div class="inner">
-        <div class="section-title center">
-          <p class="label">DAILY SCHEDULE</p>
-          <h2>ある1日の流れ（例）</h2>
+        <div class="section-title center schedule-title">
+          <div class="schedule-title__heading">
+            <div>
+              <p class="label">DAILY SCHEDULE</p>
+              <h2>ある1日の流れ（例）</h2>
+            </div>
+            <img class="schedule-title__icon" src="images/hidamari_daily_title-icon.png" alt="">
+          </div>
         </div>
         <div class="schedule-list">
           <article class="schedule-item">
@@ -183,12 +214,11 @@
     <section class="staff section-light" id="staff">
       <div class="inner narrow">
         <div class="section-title center staff-heading">
-          <img class="garland garland-left" src="images/staff-garland.png" alt="">
+          <img class="staff-title__icon" src="images/hidamari_voice_title-icon.png" alt="">
           <div>
             <p class="label">STAFF VOICE</p>
             <h2>先輩の声</h2>
           </div>
-          <img class="garland garland-right" src="images/staff-garland.png" alt="">
         </div>
         <div class="staff-grid">
           <article class="staff-card">
@@ -221,28 +251,35 @@
 <!-- =========================
   Requirements / 募集要項
 ========================= -->
-    <section class="requirements section-beige section-curve" id="requirements">
+    <section class="requirements section-beige" id="requirements">
       <div class="inner narrow">
-        <div class="section-title center">
-          <p class="label">RECRUITMENT</p>
-          <h2>募集要項</h2>
+        <div class="section-title center requirements-title">
+          <div class="requirements-title__heading">
+            <img class="requirements-title__icon" src="images/hidamari_recruitment_title-icon.png" alt="">
+            <div>
+              <p class="label">RECRUITMENT</p>
+              <h2>募集要項</h2>
+            </div>
+          </div>
         </div>
         <div class="table-wrap">
           <table>
             <tbody>
               <tr><th>募集職種</th><td>保育士</td></tr>
               <tr><th>雇用形態</th><td>正社員・パート</td></tr>
-              <tr><th>勤務時間</th><td>7:30〜18:30の間でシフト制</td></tr>
-              <tr><th>勤務場所</th><td>陽だまりの森保育園</td></tr>
-              <tr><th>給与</th><td>経験・スキルに応じて決定</td></tr>
-              <tr><th>福利厚生</th><td>社会保険完備、交通費支給、産休・育休制度</td></tr>
-              <tr><th>その他</th><td>見学のみ、カジュアル面談からのご相談も歓迎します。</td></tr>
+              <tr><th>仕事内容</th><td>0〜5歳児の保育業務全般、行事の準備、保護者対応など</td></tr>
+              <tr><th>応募資格</th><td>保育士資格をお持ちの方</td></tr>
+              <tr><th>勤務地</th><td>陽だまりの森保育園</td></tr>
+              <tr><th>勤務時間</th><td>7:00〜19:00の間でシフト制</td></tr>
+              <tr><th>休日</th><td>日曜・祝日・年末年始、その他シフトによる</td></tr>
+              <tr><th>給与</th><td>経験・能力を考慮のうえ決定</td></tr>
+              <tr><th>待遇</th><td>社会保険完備、交通費支給、研修制度あり</td></tr>
+              <tr><th>応募方法</th><td>エントリーフォームまたはお電話よりお問い合わせください</td></tr>
             </tbody>
           </table>
         </div>
         <div class="requirements-buttons">
-          <a class="btn btn-outline" href="#contact">詳しい募集内容を見る</a>
-          <a class="btn" href="#contact"><span></span>応募を相談してみる</a>
+          <a class="btn" href="#contact"><span></span>園見学を申し込む</a>
         </div>
       </div>
     </section>
@@ -250,35 +287,41 @@
   FAQ / よくある質問
 ========================= -->
     <section class="faq section-light" id="faq">
+      <div class="faq__arch" aria-hidden="true"></div>
       <div class="inner narrow faq-inner">
-        <div class="section-title center">
-          <p class="label">FAQ</p>
-          <h2>よくある質問</h2>
+        <div class="section-title center faq-title">
+          <div class="faq-title__heading">
+            <img class="faq-title__icon" src="images/hidamari_faq_title-icon.png" alt="">
+            <div>
+              <p class="label">FAQ</p>
+              <h2>よくある質問</h2>
+            </div>
+          </div>
         </div>
         <div class="faq-list">
           <details open>
             <summary><span>Q</span>未経験でも応募できますか？</summary>
-            <p><span>A</span>はい。先輩が業務の流れを丁寧にサポートします。見学や相談からでも歓迎です。</p>
+            <p><span>A</span>はい、未経験の方も歓迎しています。入職後は先輩スタッフがそばでサポートしながら、少しずつ仕事に慣れていただけます。</p>
           </details>
           <details>
-            <summary><span>Q</span>見学だけでも可能ですか？</summary>
-            <p><span>A</span>可能です。園の雰囲気や働き方を知ってから検討いただけます。</p>
+            <summary><span>Q</span>見学は土日でも可能ですか？</summary>
+            <p><span>A</span>基本的には平日のご案内となりますが、日程によってはご相談可能です。まずはお気軽にお問い合わせください。</p>
           </details>
           <details>
             <summary><span>Q</span>残業や持ち帰りはありますか？</summary>
-            <p><span>A</span>残業は少なめで、持ち帰りが発生しにくい体制づくりを大切にしています。</p>
+            <p><span>A</span>日々の業務を分担し、できるだけ残業や持ち帰りが発生しないようにしています。</p>
           </details>
           <details>
             <summary><span>Q</span>ブランクがあっても大丈夫ですか？</summary>
-            <p><span>A</span>大丈夫です。復帰後のペースに合わせて少しずつ慣れていけます。</p>
+            <p><span>A</span>大丈夫です。久しぶりのお仕事復帰でも安心して働けるよう、周りのスタッフがサポートします。</p>
           </details>
           <details>
-            <summary><span>Q</span>ピアノが苦手でも応募できますか？</summary>
-            <p><span>A</span>得意なことを活かしながらチームで保育を進めるため、ピアノが苦手でも問題ありません。</p>
+            <summary><span>Q</span>ピアノが苦手でも大丈夫ですか？</summary>
+            <p><span>A</span>大丈夫です。得意なことを活かしながら、苦手なことはチームで補い合う保育を大切にしています。</p>
           </details>
           <details>
-            <summary><span>Q</span>パート勤務から正社員は目指せますか？</summary>
-            <p><span>A</span>希望や状況に応じて相談できます。まずは働き方の希望を聞かせてください。</p>
+            <summary><span>Q</span>パートの勤務時間は相談できますか？</summary>
+            <p><span>A</span>はい、ご家庭の状況やご希望を伺いながら、無理のない働き方を一緒に考えます。</p>
           </details>
         </div>
       </div>
@@ -288,20 +331,37 @@
 ========================= -->
     <section class="contact section-beige" id="contact">
       <div class="inner contact-inner">
-        <div class="section-title center">
-          <p class="label">VISIT US</p>
-          <h2>まずは園の雰囲気を見に来ませんか？</h2>
-          <p>見学のみ、カジュアル面談のみでも大丈夫です。<br>あなたらしく働ける場所か、ぜひ一度たしかめてください。</p>
+        <div class="section-title center contact-title">
+          <div class="contact-title__heading">
+            <img class="contact-title__icon" src="images/hidamari_visit_title-icon.png" alt="">
+            <div>
+              <p class="label">VISIT US</p>
+              <h2>園見学を申し込む</h2>
+            </div>
+          </div>
         </div>
         <div class="contact-box">
-          <div class="tel">
-            <small>お電話でのお問い合わせ</small>
-            <a href="tel:03XXXXXXXX">03-XXXX-XXXX</a>
-            <span>受付時間：平日9:00〜17:00</span>
-          </div>
-          <div class="mail">
-            <small>メールでのお問い合わせ</small>
+          <div class="contact-box__lead">
+            <h3>まずは園の雰囲気を見に来ませんか？</h3>
+            <p>子どもたちの過ごし方や、先生たちの働く様子を実際にご覧いただけます。<br>少しでも気になる方は、お気軽に園見学へお越しください。</p>
             <a class="btn" href="mailto:sample@example.com"><span></span>園見学を申し込む</a>
+          </div>
+          <div class="contact-flow">
+            <div class="contact-flow__item">
+              <span>STEP 01</span>
+              <h3>お問い合わせ</h3>
+              <p>フォームまたはお電話からご連絡ください。</p>
+            </div>
+            <div class="contact-flow__item">
+              <span>STEP 02</span>
+              <h3>日程調整</h3>
+              <p>ご希望の日程を伺い、見学日を決定します。</p>
+            </div>
+            <div class="contact-flow__item">
+              <span>STEP 03</span>
+              <h3>園見学</h3>
+              <p>園の雰囲気や働き方について、ゆっくりご案内します。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -313,7 +373,13 @@
   <footer class="footer">
     <div class="inner footer-inner">
       <div class="footer-brand">
-        <img src="images/logo.svg" alt="陽だまりの森保育園">
+        <div class="footer-logo" aria-label="陽だまりの森保育園 採用サイト">
+          <img class="footer-logo__icon" src="images/hidamari_common_logo-icon.png" alt="">
+          <span class="footer-logo__text">
+            <span class="footer-logo__name">陽だまりの森保育園</span>
+            <span class="footer-logo__site">採用サイト</span>
+          </span>
+        </div>
         <p>一人ひとりに寄り添う、あたたかな小規模保育。</p>
       </div>
       <div class="footer-links">

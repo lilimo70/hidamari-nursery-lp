@@ -50,6 +50,46 @@ if (pageTopButton) {
   togglePageTopButton();
 }
 
+document.querySelectorAll(".faq details").forEach((details) => {
+  const summary = details.querySelector("summary");
+
+  if (!summary) return;
+
+  summary.addEventListener("click", (event) => {
+    if (!details.animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (details.dataset.animating === "true") return;
+
+    event.preventDefault();
+    details.dataset.animating = "true";
+
+    const isOpen = details.open;
+    const startHeight = `${details.offsetHeight}px`;
+
+    if (!isOpen) details.open = true;
+
+    const endHeight = isOpen ? `${summary.offsetHeight}px` : `${details.scrollHeight}px`;
+    const animation = details.animate(
+      { height: [startHeight, endHeight] },
+      { duration: 240, easing: "ease-out" }
+    );
+
+    details.style.overflow = "hidden";
+
+    animation.onfinish = () => {
+      details.open = !isOpen;
+      details.style.height = "";
+      details.style.overflow = "";
+      details.dataset.animating = "false";
+    };
+
+    animation.oncancel = () => {
+      details.style.height = "";
+      details.style.overflow = "";
+      details.dataset.animating = "false";
+    };
+  });
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const target = document.querySelector(link.getAttribute("href"));
